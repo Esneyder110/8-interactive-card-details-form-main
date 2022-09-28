@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Google fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <links
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet" />
+    <title>
+      Frontend Mentor | Interactive card details form
+    </title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="hero">
+        <div class="card">
+          <div class="card__front">
+            <img
+              src="images/bg-card-front.png"
+              alt=""
+              class="img" />
+            <div class="data-front">
+              <img
+                class="logo"
+                src="images/card-logo.svg"
+                alt="" />
+              <p id="cardNumber" class="number">
+                0000 0000 0000 0000
+              </p>
+              <div class="data-inner">
+                <p id="cardName" class="name">
+                  Jane Appleseed
+                </p>
+                <p id="exp-date" class="">
+                  <span id="cardMonth">00</span>/
+                  <span id="cardYear">00</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card__back">
+            <img
+              src="images/bg-card-back.png"
+              alt=""
+              class="img" />
+            <div class="data-back">
+              <p id="cardCvc" class="cvc">123</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <form class="form" action="">
+          <div class="form__section">
+            <label class="form__section--label" for=""
+              >Cardholder Name</label
+            >
+
+            <input
+              autocomplete="off"
+              id="name"
+              class="form__section--input"
+              placeholder="e.g. Jane Appleseed"
+              type="text" />
+          </div>
+
+          <div class="form__section">
+            <label class="form__section--label" for=""
+              >Card Number</label
+            >
+            <input
+              maxlength="16"
+              id="number"
+              class="form__section--input"
+              placeholder="e.g. 1234 5678 9123"
+              type="text" />
+          </div>
+
+          <div class="form__section form__section--short">
+            <div class="form__section--left">
+              <!-- Left -->
+              <label class="form__section--label" for=""
+                >Exp. Date (MM/YY)</label
+              >
+              <div class="form__section--left-inputs">
+                <input
+                  maxlength="2"
+                  id="month"
+                  class="form__section--input"
+                  placeholder="MM"
+                  type="text" />
+                <input
+                  maxlength="2"
+                  id="year"
+                  class="form__section--input"
+                  placeholder="YY"
+                  type="text" />
+              </div>
+            </div>
+
+            <div class="form__section--right">
+              <!-- Right -->
+              <label class="form__section--label" for=""
+                >CVC</label
+              >
+              <input
+                maxlength="3"
+                id="cvc"
+                class="form__section--input"
+                placeholder="e.g. 123"
+                type="text" />
+            </div>
+          </div>
+
+          <button class="form__btn" type="submit">
+            Confirm
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- 
+      0000 0000 0000 0000 
+      Jane Appleseed 
+      00/00 
+      000 
+      Cardholder Name 
+      e.g. Jane Appleseed 
+      
+      Card Number 
+      e.g. 1234 5678 9123
+      
+      0000 
+     
+      Exp. Date (MM/YY) 
+      MM 
+      YY 
+      
+      CVC 
+      e.g. 123 
+      
+      Confirm
+
+    Completed state start
+
+    Thank you! We've added your card details 
+    Continue  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

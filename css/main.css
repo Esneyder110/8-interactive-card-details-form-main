@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form__section--input, .form__btn, .hero .card .data-front .number {
+  font-size: 1.8rem;
+}
+
+.form__section--label {
+  font-size: 1.2rem;
+  letter-spacing: 0.17em;
+}
+
+.form__section .error {
+  font-size: 1.2rem;
+}
+
+.form__section--input, .form__btn {
+  border-radius: 1rem;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12.8rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+  background: url("../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 24rem;
+  width: 100%;
+  padding: 3.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .card {
+  height: 100%;
+  width: 100%;
+  max-width: 35.7rem;
+  position: relative;
+  color: #ffffff;
+}
+.hero .card__front {
+  height: fit-content;
+  width: min(80vw, 28.6rem);
+  position: absolute;
+  bottom: -40%;
+  z-index: 10;
+}
+.hero .card .data-front {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 2.4rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.hero .card .data-front .logo {
+  max-width: 5.5rem;
+}
+.hero .card .data-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.hero .card__back {
+  height: fit-content;
+  width: min(80vw, 28.6rem);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+}
+.hero .card .data-back {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+}
+
+.form {
+  margin: 0 2.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 35.7rem;
+}
+.form__btn {
+  background-color: #21092f;
+  border: none;
+  width: 100%;
+  padding: 1.6rem;
+  color: #ffffff;
+}
+
+.form__section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+.form__section .error {
+  color: #ff5252;
+}
+.form__section--label {
+  display: block;
+  color: #21092f;
+}
+.form__section--input {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #21092f;
+  padding: 1.6rem;
+  border: 1px solid #dedddf;
+}
+.form__section--input:focus {
+  outline: none;
+  border: 2px solid #600594;
+}
+.form__section--input:-internal-autofill-selected {
+  background-color: red;
+}
+.form__section--input--input::placeholder {
+  color: #dedddf;
+}
+
+.form__section.form__section--short {
+  flex-direction: row;
+}
+.form__section.form__section--short .form__section--left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.form__section.form__section--short .form__section--left-inputs {
+  display: flex;
+  gap: 1.6rem;
+}
+.form__section.form__section--short .form__section--right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    justify-content: initial;
+    gap: 0;
+  }
+  .hero {
+    background-image: url("../images/bg-main-desktop.png");
+    height: 100vh;
+    width: 33vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  }
+  .hero .card {
+    max-width: 100%;
+    height: 50vh;
+  }
+  .hero .card__front {
+    right: -33%;
+    top: 0;
+  }
+  .hero .card__back {
+    top: initial;
+    right: -43%;
+    bottom: 0;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .form {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
